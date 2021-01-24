@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text ="${std}"></h1>
+	<table border="1">
+		<tr >
+			<th th:each="x: ${titleList}">
+				<div th:text ="${x}"></div>
+			 </th>
+		</tr>
+		
+		<tr >
+			<td th:each="x: ${listPerson1}" >
+				<div th:text="${x}"></div>
+			</td>		
+		</tr>
+			
+		<tr >
+			<td th:each="x: ${listPerson2}" >
+				<div th:text="${x}"></div>
+			</td>		
+		</tr>	
+		
+		<tr >
+			<td th:each="x: ${listPerson3}" >
+				<div th:text="${x}"></div>
+			</td>		
+		</tr>	
+		
+		<tr >
+			<td th:each="x: ${listPerson4}" >
+				<div th:text="${x}"></div>
+			</td>		
+		</tr>	
+		
+		<tr >
+			<td th:each="x: ${listPerson5}" >
+				<div th:text="${x}"></div>
+			</td>		
+		</tr>	
+		
+	</table>
+</body>
+</html>
