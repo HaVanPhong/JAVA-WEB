@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe5ea"
+        >
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#013552"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:text="Order drink"/>
+        <ImageView
+            android:id="@+id/imgCart"
+            android:layout_width="80dp"
+            android:backgroundTint="#914529"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/cart"
+            >
+
+
+        </ImageView>
+        <TextView
+            android:id="@+id/tvTatalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edt"
+            android:text="0"
+            android:textSize="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="17dp"
+            android:layout_alignRight="@id/imgCart"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome "
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/edtName"
+            android:hint=" user"
+            android:textSize="23dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=", Please choose a drink"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:padding="15dp"
+        android:background="@drawable/custom_list"
+        android:layout_height="400dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            android:text="Total Price: "/>
+        <TextView
+            android:id="@+id/tvPrice"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:layout_toLeftOf="@id/dolar"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/dolar"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="$"
+            android:layout_alignParentRight="true"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

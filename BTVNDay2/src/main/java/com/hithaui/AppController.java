@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class AppController {
 	
 	@GetMapping("/students")
-	ModelAndView home () {
+	public ModelAndView home () {
 		ModelAndView modelAndView =new ModelAndView("index");
 		List<PersonVIP> listPerson =new ArrayList<PersonVIP>();
 		
